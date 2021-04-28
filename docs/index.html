@@ -50,10 +50,9 @@
     }).addTo(map);
 
     // Overlay (tiles layer TMS locale)
-	var lyr = L.tileLayer('file:///C%3A/Users/Pc/Desktop/southbeach/south_tiles/{z}/{x}/{y}.png', {
+	var lyr = L.tileLayer('south_tiles/{z}/{x}/{y}.png', {
         tms: false, 
-	//opacity: 1, 
-	attribution: '<a href = "https://legacy.lib.utexas.edu/maps/ams/italy_50k/">Mappa topografica</a>'
+	//opacity: 1,
 	}).addTo(map);
 	L.control.sideBySide(lyr, google).addTo(map);
 	/*/var osmLayer2 = L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
